@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="az" data-lang="az">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SpeakLab — İngiliscə danışıq praktikası: real insanlarla və AI koçla</title>
+<meta name="description" content="İngiliscə danışmağı real partnerlərlə məşq et. Həftəlik plan, səviyyənə uyğun cütləşmə, zəngdən sonra AInur hesabatı. İlk 3 praktika pulsuz, sonra ayda 6 AZN.">
+<meta name="keywords" content="ingiliscə danışıq, ingilis dili danışıq praktikası, speaking club, ingiliscə danışmaq, online ingilis dili, Azərbaycan, SpeakLab">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://speaklab.me/">
+<link rel="alternate" hreflang="az" href="https://speaklab.me/">
+<link rel="alternate" hreflang="x-default" href="https://speaklab.me/">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<meta property="og:type" content="website"><meta property="og:site_name" content="SpeakLab"><meta property="og:locale" content="az_AZ">
+<meta property="og:title" content="SpeakLab — İngiliscə danışmağın yeri burada">
+<meta property="og:description" content="Real partnerlərlə danış, AInur-dan hesabat al. İlk 3 praktika pulsuz.">
+<meta property="og:url" content="https://speaklab.me/"><meta property="og:image" content="https://speaklab.me/og.png">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://speaklab.me/og.png">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Organization", "name": "SpeakLab", "url": "https://speaklab.me/", "logo": "https://speaklab.me/icon.svg", "sameAs": ["https://play.google.com/store/apps/details?id=com.speaklab.app"]}, {"@context": "https://schema.org", "@type": "WebSite", "name": "SpeakLab", "url": "https://speaklab.me/", "inLanguage": ["az", "en"]}, {"@context": "https://schema.org", "@type": "MobileApplication", "name": "SpeakLab", "operatingSystem": "Android", "applicationCategory": "EducationalApplication", "url": "https://play.google.com/store/apps/details?id=com.speaklab.app", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "AZN", "description": "İlk 3 praktika pulsuz, sonra ayda 6 AZN"}}, {"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "az", "mainEntity": [{"@type": "Question", "name": "Kiminlə danışıram?", "acceptedAnswer": {"@type": "Answer", "text": "Səviyyəcə uyğun real öyrənənlərlə. Cütləşmə səviyyəni, yaş qrupunu və əvvəl danışdığın adamları nəzərə alır."}}, {"@type": "Question", "name": "Səviyyəm aşağıdır, olar?", "acceptedAnswer": {"@type": "Answer", "text": "Əlbəttə. SpeakLab məhz danışmağa çəkinənlər üçündür. Səhv etmək burada normaldır."}}, {"@type": "Question", "name": "AInur nədir?", "acceptedAnswer": {"@type": "Answer", "text": "Sənin AI danışıq koçun. Zəngdən sonra danışığını analiz edir, ya da istənilən vaxt onunla təkbaşına danışa bilərsən."}}, {"@type": "Question", "name": "Quraşdırmaq lazımdır?", "acceptedAnswer": {"@type": "Answer", "text": "Xeyr, brauzerdən açılır və telefonun ana ekranına əlavə edilə bilər. Android tətbiqi Google Play-dədir."}}, {"@type": "Question", "name": "3 pulsuz praktikadan sonra nə olur?", "acceptedAnswer": {"@type": "Answer", "text": "Ayda 8 praktikalıq paketi (6 AZN) seçirsən. Seçməsən də, AInur ilə təkbaşına danışmaq və dostla zənglər davam edir."}}]}]</script>
+<meta name="theme-color" content="#f5f4f9">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5f4f9; --bg2:#eae8f2; --card:#fff;
+  --ink:#191727; --ink2:#48445e; --ink3:#6b6785;
+  --peer:#403a7e; --peer-strong:#2e2960; --peer-soft:rgba(64,58,126,.09);
+  --ai:#6f5ad0; --ai-fill:#c9baff; --ai-soft:rgba(111,90,208,.12);
+  --coral:#dc553a; --coral-soft:rgba(220,85,58,.16); --coral-ink:#8f3219;
+  --line:rgba(25,23,39,.12);
+  --dark:#171331; --dark2:#241e48;
+  --r:16px; --r-sm:10px;
+  --ease:cubic-bezier(.16,1,.3,1);
+  --display:"Bricolage Grotesque",system-ui,sans-serif;
+  --body:"Instrument Sans",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font:400 1.0625rem/1.6 var(--body);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--peer);color:#fff}
+:focus-visible{outline:3px solid var(--ai);outline-offset:3px;border-radius:6px}
+a{color:inherit}
+.wrap{width:min(1160px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:var(--display);line-height:1.04;letter-spacing:-.025em;text-wrap:balance}
+p{text-wrap:pretty}
+html[data-lang=az] [data-en],html[data-lang=en] [data-az]{display:none!important}
+
+/* nav */
+nav{position:sticky;top:0;z-index:50;background:rgba(245,244,249,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:28px;height:68px}
+.logo{font:800 1.35rem var(--display);letter-spacing:-.03em;text-decoration:none;display:flex;align-items:center;gap:9px}
+.logo i{width:26px;height:26px;border-radius:8px;background:var(--peer);display:grid;place-items:center}
+.logo i svg{width:15px;height:15px}
+.links{display:flex;gap:26px;margin-left:auto;font-weight:600;font-size:.95rem;color:var(--ink2)}
+.links a{text-decoration:none;transition:color .2s}.links a:hover{color:var(--peer)}
+.lang{display:flex;border:1px solid var(--line);border-radius:99px;padding:3px}
+.lang button{font:700 .78rem var(--body);border:0;background:none;padding:5px 11px;border-radius:99px;color:var(--ink2);cursor:pointer}
+html[data-lang=az] .lang [data-set=az],html[data-lang=en] .lang [data-set=en]{background:var(--peer);color:#fff}
+.btn{display:inline-flex;align-items:center;gap:10px;font:700 1rem var(--body);text-decoration:none;border-radius:99px;padding:15px 26px;border:0;cursor:pointer;transition:transform .25s var(--ease),background .2s}
+.btn svg{width:18px;height:18px;transition:transform .25s var(--ease)}
+.btn:hover svg{transform:translateX(4px)}
+.btn-primary{background:var(--peer);color:#fff}.btn-primary:hover{background:var(--peer-strong)}
+.btn-ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--line)}.btn-ghost:hover{box-shadow:inset 0 0 0 1.5px var(--peer)}
+.btn-sm{padding:10px 18px;font-size:.9rem}
+
+/* hero */
+.hero{padding:72px 0 96px;position:relative}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(2.7rem,6.4vw,5.4rem);font-weight:800}
+.hero h1 em{font-style:normal;color:var(--peer);position:relative;white-space:nowrap}
+.hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.04em;height:.12em;background:var(--coral);border-radius:9px;transform-origin:left;animation:draw 1s .5s var(--ease) both}
+@keyframes draw{from{transform:scaleX(0)}}
+.lede{font-size:1.2rem;color:var(--ink2);max-width:34em;margin:28px 0 36px}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.proof{margin-top:40px;font-size:.92rem;color:var(--ink3);font-weight:500}
+.proof b{color:var(--ink);font-weight:700}
+
+/* call mock */
+.stage{position:relative;background:var(--dark);border-radius:28px;padding:22px;color:#f4f2fc;box-shadow:0 30px 60px -28px rgba(46,41,96,.55)}
+.stage-top{display:flex;justify-content:space-between;align-items:center;font-size:.8rem;font-weight:600;color:#c8c2e4;padding:2px 4px 16px}
+.live{display:flex;align-items:center;gap:8px}.live i{width:8px;height:8px;border-radius:50%;background:var(--coral);animation:pulse 1.6s infinite}
+@keyframes pulse{50%{opacity:.35}}
+.voices{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.voice{background:var(--dark2);border-radius:var(--r);padding:20px 16px 16px;text-align:center}
+.av{width:64px;height:64px;border-radius:50%;margin:0 auto 12px;display:grid;place-items:center;font:700 1.4rem var(--display)}
+.voice:nth-child(1) .av{background:#b6a6ff;color:#2e2960}
+.voice:nth-child(2) .av{background:#e9d6ff;color:#403a7e}
+.voice b{display:block;font-size:.95rem}.voice span{font-size:.78rem;color:#c8c2e4}
+.wave{display:flex;gap:3px;align-items:center;justify-content:center;height:30px;margin-top:12px}
+.wave s{width:4px;border-radius:3px;background:#b6a6ff;height:30%;animation:bar 1.1s ease-in-out infinite}
+.voice:nth-child(2) .wave s{background:#e9d6ff;animation-duration:1.4s}
+.wave s:nth-child(2){animation-delay:.1s}.wave s:nth-child(3){animation-delay:.25s}.wave s:nth-child(4){animation-delay:.05s}.wave s:nth-child(5){animation-delay:.35s}.wave s:nth-child(6){animation-delay:.2s}.wave s:nth-child(7){animation-delay:.4s}
+@keyframes bar{50%{height:100%}}
+.topic{margin-top:12px;background:var(--dark2);border-radius:var(--r);padding:16px 18px}
+.topic small{color:#c8c2e4;font-weight:600;font-size:.76rem}
+.topic p{font:600 1.05rem/1.35 var(--display);margin-top:6px}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+.chips span{font-size:.78rem;font-weight:600;background:rgba(182,166,255,.18);color:#dbd0ff;padding:5px 11px;border-radius:99px}
+.report{position:absolute;right:-26px;bottom:-58px;width:min(250px,72%);background:#fff;color:var(--ink);border-radius:var(--r);padding:16px 18px;box-shadow:0 24px 40px -18px rgba(25,23,39,.45);animation:float 6s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-7px)}}
+.report small{font-weight:700;font-size:.72rem;color:var(--ai)}
+.fix{font-size:.86rem;margin-top:8px;line-height:1.4}
+.fix s{color:var(--coral-ink);text-decoration-color:var(--coral)}
+.fix b{color:var(--peer)}
+.gain{margin-top:10px;display:inline-block;font:700 .8rem var(--body);background:var(--coral-soft);color:var(--coral-ink);padding:3px 10px;border-radius:99px}
+
+/* sections */
+section{padding:104px 0}
+.head{max-width:700px;margin-bottom:56px}
+.head h2{font-size:clamp(2rem,4.2vw,3.3rem);font-weight:800}
+.head p{margin-top:18px;color:var(--ink2);font-size:1.15rem}
+
+/* how: steps as a rail */
+.rail{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}
+.rail::before{content:"";position:absolute;left:0;right:0;top:27px;height:2px;background:var(--line)}
+.step{padding-right:28px;position:relative}
+.dot{width:56px;height:56px;border-radius:50%;background:var(--bg);box-shadow:inset 0 0 0 2px var(--peer);display:grid;place-items:center;color:var(--peer);margin-bottom:22px;position:relative;transition:background .3s,color .3s}
+.step:hover .dot{background:var(--peer);color:#fff}
+.dot svg{width:24px;height:24px}
+.step h3{font-size:1.35rem;margin-bottom:10px}
+.step p{color:var(--ink2);font-size:1rem}
+
+/* features: asymmetric */
+.alt{background:var(--bg2)}
+.feat{display:grid;grid-template-columns:repeat(12,1fr);gap:20px}
+.f{background:var(--card);border-radius:20px;padding:32px;position:relative;overflow:hidden}
+.f h3{font-size:1.5rem;margin-bottom:12px}
+.f p{color:var(--ink2)}
+.f.a{grid-column:span 7;background:var(--peer);color:#fff;min-height:320px;display:flex;flex-direction:column;justify-content:flex-end}
+.f.a p{color:#d9d4f5;max-width:30em}.f.a h3{font-size:2rem}
+.f.b{grid-column:span 5}
+.f.c{grid-column:span 4}.f.d{grid-column:span 4}.f.e{grid-column:span 4}
+.tag{display:inline-block;font:700 .75rem var(--body);padding:4px 11px;border-radius:99px;background:var(--ai-soft);color:var(--ai);margin-bottom:16px}
+.f.a .tag{background:rgba(255,255,255,.16);color:#fff}
+.grid7{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;margin-bottom:26px;max-width:380px}
+.grid7 i{aspect-ratio:1;border-radius:6px;background:rgba(255,255,255,.12)}
+.grid7 i.on{background:#cfc4ff}
+.grid7 i.hit{background:var(--coral)}
+.mini{font-weight:700;font-size:.8rem;color:var(--ink3);margin-bottom:12px;display:block}
+.ticks{display:flex;gap:6px;margin:6px 0 18px}
+.ticks i{flex:1;height:34px;border-radius:8px;background:var(--bg2)}
+.ticks i.on{background:var(--ai-fill)}
+
+/* AInur report band */
+.dark{background:var(--dark);color:#f4f2fc;border-radius:36px;margin-inline:12px}
+.dark .head p{color:#c8c2e4}
+.ainur{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.sheet{background:var(--dark2);border-radius:22px;padding:28px;display:grid;gap:22px}
+.row{display:grid;grid-template-columns:1fr auto;gap:6px 14px;align-items:end}
+.row small{color:#c8c2e4;font-weight:600;font-size:.82rem}
+.row strong{font:700 1.7rem var(--display);color:#fff}
+.bar{grid-column:1/-1;height:8px;background:rgba(255,255,255,.1);border-radius:9px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--coral);border-radius:9px;transform-origin:left;transform:scaleX(0);transition:transform 1.4s var(--ease)}
+.in .bar i{transform:scaleX(var(--w))}
+.corr{background:rgba(255,255,255,.06);border-radius:12px;padding:14px 16px;font-size:.95rem}
+.corr s{color:#ffc4b3;text-decoration-color:#ff9477}.corr b{color:#dbd0ff}
+.words{display:flex;flex-wrap:wrap;gap:8px}
+.words span{background:rgba(182,166,255,.16);color:#dbd0ff;font-weight:600;font-size:.85rem;padding:5px 12px;border-radius:99px}
+.checks{list-style:none;padding:0;margin-top:30px;display:grid;gap:14px}
+.checks li{display:flex;gap:12px;color:#e6e1f7}
+.checks svg{flex:none;width:22px;height:22px;color:#ff9477;margin-top:2px}
+
+/* pricing */
+.free{display:grid;grid-template-columns:1fr 1.3fr;gap:0;background:var(--peer);color:#fff;border-radius:28px;overflow:hidden;margin-bottom:24px}
+.free>div{padding:44px}
+.free h3{font-size:2.3rem}
+.free p{color:#d9d4f5;margin-top:14px}
+.free .btn{margin-top:28px;background:#fff;color:var(--peer)}
+.free .btn:hover{background:#ece8ff}
+.free .side{background:var(--peer-strong);display:flex;flex-direction:column;justify-content:center;gap:18px}
+.free .big{font:800 3.6rem/1 var(--display);letter-spacing:-.03em}
+.free .big small{font:600 1.05rem var(--body);color:#c8c2e4;letter-spacing:0;margin-left:8px}
+.pk{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.p{background:var(--card);border-radius:20px;padding:26px 24px;display:flex;flex-direction:column;box-shadow:inset 0 0 0 1.5px transparent;transition:box-shadow .25s,transform .35s var(--ease)}
+.p:hover{box-shadow:inset 0 0 0 1.5px var(--peer);transform:translateY(-4px)}
+.p .n{font:800 3rem/1 var(--display);color:var(--peer)}
+.p .u{font-weight:600;color:var(--ink2);margin:6px 0 22px}
+.p .pr{margin-top:auto;font:700 1.5rem var(--display)}
+.p .pr small{font:600 .9rem var(--body);color:var(--ink3)}
+.p.on{background:var(--ai-fill)}.p.on .n{color:var(--peer-strong)}
+.p.lock{background:transparent;box-shadow:inset 0 0 0 1.5px var(--line);color:var(--ink3);cursor:not-allowed}
+.p.lock:hover{transform:none;box-shadow:inset 0 0 0 1.5px var(--line)}
+.p.lock .n{color:var(--ink3)}.p.lock .pr{display:flex;align-items:center;gap:8px;font-size:1.05rem}
+.p.lock .pr svg{width:18px;height:18px}
+.btn-play svg{width:18px;height:18px}.btn-play:hover svg{transform:none}
+.note{margin-top:20px;color:var(--ink3);font-size:.95rem}
+
+/* faq */
+.faq{max-width:780px}
+details{border-top:1px solid var(--line);padding:22px 0}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{font:700 1.2rem var(--display);cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;letter-spacing:-.01em}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:500 1.7rem/1 var(--body);color:var(--peer);transition:transform .3s var(--ease)}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin-top:14px;color:var(--ink2);max-width:40em}
+
+/* final */
+.final{text-align:center;padding:120px 0}
+.final h2{font-size:clamp(2.2rem,5.4vw,4.4rem);font-weight:800;max-width:14em;margin-inline:auto}
+.final p{color:var(--ink2);margin:20px auto 36px;max-width:30em;font-size:1.15rem}
+.final .cta{justify-content:center}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--ink3);font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.in.rv,.in .rv{opacity:1;transform:none}
+.js-off .rv{opacity:1;transform:none}
+
+@media (max-width:980px){
+  .hero .wrap,.ainur,.free{grid-template-columns:1fr}
+  .rail{grid-template-columns:1fr 1fr;row-gap:44px}.rail::before{display:none}
+  .f.a,.f.b,.f.c,.f.d,.f.e{grid-column:span 12}
+  .pk{grid-template-columns:1fr 1fr}
+  .links{display:none}nav .lang{margin-left:auto}
+  .report{right:6px;bottom:-40px}
+  section{padding:72px 0}
+}
+@media (max-width:560px){
+  .rail,.pk{grid-template-columns:1fr}
+  .hero{padding:44px 0 72px}
+  .stage{margin-bottom:34px}
+  .free>div{padding:30px 24px}.free .big{font-size:3rem}
+  nav .btn{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.bar i{transform:scaleX(var(--w))}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.5-3.6 3.2-5.5 6.5-5.5s6 1.9 6.5 5.5M16 4.8a3.5 3.5 0 0 1 0 6.4M18 14.8c1.9.6 3.2 2.3 3.5 5.2"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18M6 16l4-5 3 3 5-7"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="3"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M4.5 2.8v18.4c0 .5.5.8.9.5l15.6-9.2c.4-.2.4-.8 0-1L5.4 2.3c-.4-.3-.9 0-.9.5z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 3 3 5-6"/></symbol>
+</svg>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top"><i><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M4 12v0M8 8v8M12 4v16M16 8v8M20 12v0"/></svg></i>SpeakLab</a>
+    <div class="links">
+      <a href="#how"><span data-az>Necə işləyir</span><span data-en>How it works</span></a>
+      <a href="#what"><span data-az>İmkanlar</span><span data-en>Features</span></a>
+      <a href="#price"><span data-az>Qiymət</span><span data-en>Pricing</span></a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="lang" role="group" aria-label="Language"><button data-set="az">AZ</button><button data-set="en">EN</button></div>
+    <a class="btn btn-primary btn-sm" href="https://speaklab-app.vercel.app/"><span data-az>3 praktika pulsuz</span><span data-en>3 practices free</span></a>
+  </div>
+</nav>
+
+<main id="top">
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <h1 class="rv">
+        <span data-az>İngiliscə danışmağın yeri <em>burada</em>.</span>
+        <span data-en>This is where you <em>speak</em> English.</span>
+      </h1>
+      <p class="lede rv" style="transition-delay:.1s">
+        <span data-az>Boş vaxtını yaz, SpeakLab sənə səviyyəcə uyğun partner tapsın. Zəngdən sonra AInur danışığını analiz edib növbəti addımını göstərir.</span>
+        <span data-en>Tell us when you're free and SpeakLab finds a partner at your level. After the call, AInur analyses your speech and shows your next step.</span>
+      </p>
+      <div class="cta rv" style="transition-delay:.2s">
+        <a class="btn btn-primary" href="https://speaklab-app.vercel.app/"><span data-az>İlk 3 praktika pulsuz</span><span data-en>First 3 practices free</span><svg><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-ghost btn-play" href="https://play.google.com/store/apps/details?id=com.speaklab.app"><svg><use href="#i-play"/></svg>Google Play</a>
+      </div>
+      <p class="proof rv" style="transition-delay:.3s"><span data-az><b>Kart tələb olunmur.</b> Brauzerdən aç, quraşdırma yoxdur.</span><span data-en><b>No card needed.</b> Opens in the browser, nothing to install.</span></p>
+    </div>
+
+    <div class="rv" style="transition-delay:.15s">
+      <div class="stage" aria-hidden="true">
+        <div class="stage-top"><span class="live"><i></i><span data-az>Canlı zəng</span><span data-en>Live call</span></span><span>12:41</span></div>
+        <div class="voices">
+          <div class="voice"><div class="av">L</div><b>Leyla</b><span>B1</span><div class="wave"><s></s><s></s><s></s><s></s><s></s><s></s><s></s></div></div>
+          <div class="voice"><div class="av">R</div><b>Rauf</b><span>B1</span><div class="wave"><s></s><s></s><s></s><s></s><s></s><s></s><s></s></div></div>
+        </div>
+        <div class="topic">
+          <small data-az>Günün mövzusu</small><small data-en>Topic of the day</small>
+          <p>Describe the last time you got lost somewhere.</p>
+          <div class="chips"><span>wander</span><span>on the way</span><span>I ended up…</span></div>
+        </div>
+        <div class="report">
+          <small>AInur</small>
+          <p class="fix"><s>I am agree</s> → <b>I agree</b></p>
+          <span class="gain">+12 <span data-az>yeni söz</span><span data-en>new words</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="how">
+  <div class="wrap">
+    <div class="head rv">
+      <h2><span data-az>Plan qur. Danış. Öyrən. Təkrar et.</span><span data-en>Plan. Speak. Learn. Repeat.</span></h2>
+      <p><span data-az>Təsadüfi axtarış yox, həftəlik plan. Hər praktikanın vaxtı, partneri və mövzusu əvvəldən məlumdur.</span><span data-en>No random searching, a weekly plan. Every practice has a time, a partner and a topic from the start.</span></p>
+    </div>
+    <div class="rail">
+      <div class="step rv"><div class="dot"><svg><use href="#i-cal"/></svg></div>
+        <h3><span data-az>Boş vaxtını yaz</span><span data-en>Set your free times</span></h3>
+        <p><span data-az>Həftədə neçə dəfə, hansı saatlarda. Öz saat qurşağında seçirsən, qalanını biz çeviririk.</span><span data-en>How many times a week and when. You choose in your own time zone, we do the converting.</span></p></div>
+      <div class="step rv" style="transition-delay:.08s"><div class="dot"><svg><use href="#i-users"/></svg></div>
+        <h3><span data-az>Partner tapılır</span><span data-en>We find a partner</span></h3>
+        <p><span data-az>Səviyyəcə uyğun adamla cütləşirsən. Təklifi təsdiqləyirsən, vaxt təqvimində görünür.</span><span data-en>You're paired with someone at your level. Confirm the proposal and it lands in your calendar.</span></p></div>
+      <div class="step rv" style="transition-delay:.16s"><div class="dot"><svg><use href="#i-mic"/></svg></div>
+        <h3><span data-az>Zəngdə danış</span><span data-en>Talk on the call</span></h3>
+        <p><span data-az>İkiniz də eyni mövzu və şəkli görürsünüz. Bilmədiyin sözü toxunub tərcümə edirsən.</span><span data-en>You both see the same topic and picture. Tap any word you don't know to translate it.</span></p></div>
+      <div class="step rv" style="transition-delay:.24s"><div class="dot"><svg><use href="#i-chart"/></svg></div>
+        <h3><span data-az>Hesabatı oxu</span><span data-en>Read your report</span></h3>
+        <p><span data-az>AInur səhvlərini, yeni sözlərini və irəliləyişini göstərir. Utandırmır, yol göstərir.</span><span data-en>AInur shows your mistakes, new words and progress. It guides, never embarrasses.</span></p></div>
+    </div>
+  </div>
+</section>
+
+<section id="what" class="alt">
+  <div class="wrap">
+    <div class="head rv">
+      <h2><span data-az>Danışmağı asanlaşdıran hər şey</span><span data-en>Everything that makes speaking easier</span></h2>
+    </div>
+    <div class="feat">
+      <div class="f a rv">
+        <div class="grid7" aria-hidden="true">
+          <i class="on"></i><i></i><i class="on"></i><i></i><i class="on"></i><i></i><i></i>
+          <i></i><i class="on"></i><i></i><i class="hit"></i><i></i><i class="on"></i><i></i>
+        </div>
+        <span class="tag"><span data-az>Həftəlik plan</span><span data-en>Weekly plan</span></span>
+        <h3><span data-az>Vaxtın sənin, partner bizdən</span><span data-en>Your time, our matching</span></h3>
+        <p><span data-az>Hədəfini seç, sistem bu həftəyə cütlər qursun. Heç vaxt boş otaqda gözləmirsən.</span><span data-en>Pick your target and the system builds your pairs for the week. You never wait in an empty room.</span></p>
+      </div>
+      <div class="f b rv" style="transition-delay:.08s">
+        <span class="tag">AInur</span>
+        <h3><span data-az>Zəngdən sonra şəxsi hesabat</span><span data-en>A personal report after every call</span></h3>
+        <p><span data-az>Qrammatika düzəlişləri, axıcılıq, yeni sözlər. Yalnız səhvi düzəldir, üslubuna toxunmur.</span><span data-en>Grammar fixes, fluency, new words. It corrects mistakes only and leaves your style alone.</span></p>
+      </div>
+      <div class="f c rv">
+        <span class="mini"><span data-az>Günün mövzusu</span><span data-en>Topic of the day</span></span>
+        <h3><span data-az>Danışacaq şey həmişə var</span><span data-en>Always something to say</span></h3>
+        <p><span data-az>Şəkil, sual və söz dəstəyi ilə söhbət heç vaxt susmur.</span><span data-en>Pictures, questions and word hints keep the conversation going.</span></p>
+      </div>
+      <div class="f d rv" style="transition-delay:.08s">
+        <div class="ticks" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div>
+        <h3><span data-az>Həftəlik hədəf</span><span data-en>Weekly target</span></h3>
+        <p><span data-az>Neçə dəfə danışdığın və hədəfə nə qədər yaxın olduğun həmişə gözünün önündə.</span><span data-en>See how often you spoke and how close you are to your goal.</span></p>
+      </div>
+      <div class="f e rv" style="transition-delay:.16s">
+        <span class="mini"><span data-az>AInur ilə təkbaşına</span><span data-en>Solo with AInur</span></span>
+        <h3><span data-az>Partner yoxdursa, AInur var</span><span data-en>No partner? AInur is there</span></h3>
+        <p><span data-az>İstənilən vaxt səslə danış, limitsiz və planlamadan.</span><span data-en>Talk by voice any time, unlimited and unplanned.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="report" style="margin-block:12px">
+  <div class="wrap ainur">
+    <div>
+      <div class="head rv" style="margin-bottom:0">
+        <h2><span data-az>Hər zəngdən sonra aydın növbəti addım</span><span data-en>A clear next step after every call</span></h2>
+        <p><span data-az>Rəqəm təkcə qiymət deyil, istiqamətdir. Nə yaxşılaşdı, nəyi təkrar etməli?</span><span data-en>Numbers aren't a grade, they're a direction. What improved, what to repeat?</span></p>
+      </div>
+      <ul class="checks rv">
+        <li><svg><use href="#i-check"/></svg><span data-az>Səhvlər sənin öz dilində izah olunur (Azərbaycan və ya Türk dili)</span><span data-en>Mistakes explained in your own language (Azerbaijani or Turkish)</span></li>
+        <li><svg><use href="#i-check"/></svg><span data-az>Yeni sözlər səviyyə və mənası ilə lüğətinə düşür</span><span data-en>New words saved with level and meaning</span></li>
+        <li><svg><use href="#i-check"/></svg><span data-az>Sessiya-sessiya irəliləyiş qrafikləri</span><span data-en>Progress charts, session by session</span></li>
+      </ul>
+    </div>
+    <div class="sheet rv" id="sheet" style="transition-delay:.1s">
+      <div class="row"><small data-az>Axıcılıq</small><small data-en>Fluency</small><strong>8.4</strong><div class="bar"><i style="--w:.84"></i></div></div>
+      <div class="row"><small data-az>Danışıq müddəti</small><small data-en>Speaking time</small><strong>11 <small>min</small></strong><div class="bar"><i style="--w:.62"></i></div></div>
+      <div class="corr"><s>I am agree with you</s> → <b>I agree with you</b></div>
+      <div class="words"><span>stubborn · B2</span><span>run into · B1</span><span>on purpose · B1</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="price">
+  <div class="wrap">
+    <div class="head rv">
+      <h2><span data-az>İlk 3 praktika pulsuz, sonra 6 AZN-ə aylıq paket</span><span data-en>First 3 practices free, then a 6 AZN monthly package</span></h2>
+      <p><span data-az>Satılan şey dəqiqə deyil, planlı praktikadır. Platformanın günahı ilə baş tutmayan praktika səndən silinmir.</span><span data-en>You're paying for planned practice, not minutes. If we fail to make a practice happen, it isn't counted against you.</span></p>
+    </div>
+    <div class="free rv">
+      <div>
+        <h3><span data-az>İlk 3 praktika pulsuz</span><span data-en>Your first 3 practices are free</span></h3>
+        <p><span data-az>Qeydiyyatdan keç, ilk 3 praktika sənindir. Müddət yoxdur, kart da yoxdur.</span><span data-en>Sign up and your first 3 practices are on us. No time limit, no card.</span></p>
+        <a class="btn" href="https://speaklab-app.vercel.app/"><span data-az>Başla</span><span data-en>Get started</span><svg><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="side">
+        <div class="big">3 <small data-az>praktika pulsuz</small><small data-en>practices free</small></div>
+        <div class="big">0 <small data-az>AZN, kartsız</small><small data-en>AZN, no card</small></div>
+      </div>
+    </div>
+    <div class="pk">
+      <div class="p on rv"><div class="n">8</div><div class="u"><span data-az>praktika / ay</span><span data-en>practices / month</span></div><div class="pr">6 AZN <small data-az>/ ay</small><small data-en>/ mo</small></div></div>
+      <div class="p lock rv" style="transition-delay:.06s" aria-disabled="true"><div class="n">12</div><div class="u"><span data-az>praktika / ay</span><span data-en>practices / month</span></div><div class="pr"><svg><use href="#i-lock"/></svg><span data-az>Tezliklə</span><span data-en>Coming soon</span></div></div>
+      <div class="p lock rv" style="transition-delay:.12s" aria-disabled="true"><div class="n">16</div><div class="u"><span data-az>praktika / ay</span><span data-en>practices / month</span></div><div class="pr"><svg><use href="#i-lock"/></svg><span data-az>Tezliklə</span><span data-en>Coming soon</span></div></div>
+      <div class="p lock rv" style="transition-delay:.18s" aria-disabled="true"><div class="n">20</div><div class="u"><span data-az>praktika / ay</span><span data-en>practices / month</span></div><div class="pr"><svg><use href="#i-lock"/></svg><span data-az>Tezliklə</span><span data-en>Coming soon</span></div></div>
+    </div>
+    <p class="note"><span data-az>AInur ilə təkbaşına danışıq və dostla birbaşa zənglər həmişə limitsizdir.</span><span data-en>Solo talks with AInur and direct calls with friends are always unlimited.</span></p>
+  </div>
+</section>
+
+<section id="faq" class="alt">
+  <div class="wrap">
+    <div class="head rv"><h2><span data-az>Tez-tez verilən suallar</span><span data-en>Frequently asked questions</span></h2></div>
+    <div class="faq rv">
+      <details><summary><span data-az>Kiminlə danışıram?</span><span data-en>Who do I talk to?</span></summary><p><span data-az>Səviyyəcə uyğun real öyrənənlərlə. Cütləşmə səviyyəni, yaş qrupunu və əvvəl danışdığın adamları nəzərə alır.</span><span data-en>Real learners at a similar level. Pairing considers level, age group and who you've already met.</span></p></details>
+      <details><summary><span data-az>Səviyyəm aşağıdır, olar?</span><span data-en>My level is low. Is that okay?</span></summary><p><span data-az>Əlbəttə. SpeakLab məhz danışmağa çəkinənlər üçündür. Səhv etmək burada normaldır.</span><span data-en>Of course. SpeakLab is built for people who hesitate to speak. Mistakes are normal here.</span></p></details>
+      <details><summary><span data-az>AInur nədir?</span><span data-en>What is AInur?</span></summary><p><span data-az>Sənin AI danışıq koçun. Zəngdən sonra danışığını analiz edir, ya da istənilən vaxt onunla təkbaşına danışa bilərsən.</span><span data-en>Your AI speaking coach. It analyses your call afterwards, or you can talk with it alone any time.</span></p></details>
+      <details><summary><span data-az>Quraşdırmaq lazımdır?</span><span data-en>Do I need to install anything?</span></summary><p><span data-az>Xeyr, brauzerdən açılır və telefonun ana ekranına əlavə edilə bilər. Android tətbiqi Google Play-dədir.</span><span data-en>No, it opens in the browser and can be added to your home screen. The Android app is on Google Play.</span></p></details>
+      <details><summary><span data-az>3 pulsuz praktikadan sonra nə olur?</span><span data-en>What happens after the 3 free practices?</span></summary><p><span data-az>Ayda 8 praktikalıq paketi (6 AZN) seçirsən. Seçməsən də, AInur ilə təkbaşına danışmaq və dostla zənglər davam edir.</span><span data-en>You pick the 8-practice package (6 AZN a month). Even without one, solo talks with AInur and calls with friends continue.</span></p></details>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2><span data-az>Bu həftə ilk söhbətini et</span><span data-en>Have your first conversation this week</span></h2>
+    <p><span data-az>İlk 3 praktika pulsuz. Sualın varsa, WhatsApp-da komandaya yaz.</span><span data-en>First 3 practices free. Questions? Message the team on WhatsApp.</span></p>
+    <div class="cta">
+      <a class="btn btn-primary" href="https://speaklab-app.vercel.app/"><span data-az>İlk 3 praktika pulsuz</span><span data-en>First 3 practices free</span><svg><use href="#i-arrow"/></svg></a>
+      <a class="btn btn-ghost btn-play" href="https://play.google.com/store/apps/details?id=com.speaklab.app"><svg><use href="#i-play"/></svg>Google Play</a>
+      <a class="btn btn-ghost" href="https://wa.me/994513549195">WhatsApp</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 SpeakLab</span><span>speaklab.me</span></div></footer>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  try{var s=localStorage.getItem('sl-lang');if(s)root.dataset.lang=s;else if(!/^az|tr/i.test(navigator.language))root.dataset.lang='en'}catch(e){}
+  document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){root.dataset.lang=b.dataset.set;root.lang=b.dataset.set;try{localStorage.setItem('sl-lang',b.dataset.set)}catch(e){}})});
+  root.lang=root.dataset.lang;
+  if(!('IntersectionObserver' in window)){root.classList.add('js-off');return}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
+  document.querySelectorAll('.rv,#sheet').forEach(function(el){io.observe(el)});
+  var sh=document.getElementById('sheet');if(sh){new IntersectionObserver(function(es,o){if(es[0].isIntersecting){sh.classList.add('in');o.disconnect()}},{threshold:.3}).observe(sh)}
+})();
+</script>
+</body>
+</html>
