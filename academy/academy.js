@@ -33,7 +33,7 @@
       chapterDone: 'Fəsil bitdi', courseDone: 'Kurs tamamlandı', nextIs: 'Növbəti: {x}',
       all: 'Bütün kurslar', back: 'Bütün kurslar', listTitle: 'Fəsillər',
       share: 'Paylaş', shareCourse: 'Kursu paylaş', shareChapter: 'Fəsli paylaş',
-      copied: 'Link kopyalandı',
+      copied: 'Link kopyalandı', fullscreen: 'Tam ekran',
     },
     tr: {
       openApp: 'Uygulamayı aç', kicker: 'Video rehberler',
@@ -47,7 +47,7 @@
       chapterDone: 'Bölüm bitti', courseDone: 'Kurs tamamlandı', nextIs: 'Sıradaki: {x}',
       all: 'Tüm kurslar', back: 'Tüm kurslar', listTitle: 'Bölümler',
       share: 'Paylaş', shareCourse: 'Kursu paylaş', shareChapter: 'Bölümü paylaş',
-      copied: 'Bağlantı kopyalandı',
+      copied: 'Bağlantı kopyalandı', fullscreen: 'Tam ekran',
     },
   };
 
@@ -62,6 +62,7 @@
     again: '<svg class="i" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>',
     start: '<svg class="i" viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg>',
     share: '<svg class="i" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>',
+    expand: '<svg class="i" viewBox="0 0 24 24"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>',
   };
 
   var app = document.getElementById('app');
@@ -315,8 +316,10 @@
 
     app.innerHTML = '<div class="player-top">' +
       '<a class="back" href="./?lang=' + lang + '" data-nav="home">' + ICON.left + t('back') + '</a>' +
+      '<div class="player-top-actions">' +
+      '<button type="button" class="btn sm ghost" data-fullscreen>' + ICON.expand + t('fullscreen') + '</button>' +
       '<button type="button" class="btn sm ghost" data-share-ch="' + series.id + '|' + ch.id + '">' + ICON.share + t('share') + '</button>' +
-      '</div>' +
+      '</div></div>' +
       '<div class="player"><div class="stage">' +
       '<div class="frame ' + (wide() ? 'landscape' : 'portrait') + '">' +
         '<video controls playsinline preload="metadata" controlsList="nodownload" poster="' + media.poster + '" src="' + media.src + '"></video>' +
@@ -399,6 +402,14 @@
 
   // ── events ───────────────────────────────────────────────
   document.addEventListener('click', function (e) {
+    var fsBtn = e.target.closest('[data-fullscreen]');
+    if (fsBtn && video) {
+      if (video.webkitEnterFullscreen) { try { video.webkitEnterFullscreen(); return; } catch (err) { /* ignore */ } }
+      if (video.requestFullscreen) { video.requestFullscreen().catch(function () {}); return; }
+      var fr = app.querySelector('.frame');
+      if (fr && fr.requestFullscreen) fr.requestFullscreen().catch(function () {});
+      return;
+    }
     var shareCh = e.target.closest('[data-share-ch]');
     if (shareCh) { var sp = shareCh.getAttribute('data-share-ch').split('|'); handleShareChapter(sp[0], sp[1]); return; }
     var shareC = e.target.closest('[data-share-course]');
